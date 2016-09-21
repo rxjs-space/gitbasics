@@ -1,0 +1,31 @@
+{
+  "name": "gitbasics",
+  "version": "1.0.0",
+  "description": "some demo of gitbasics\r the 2nd line\r the 3rd line",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "prestart": "tsc index.ts",
+    "poststart": "echo \"This is after the end point.\"",
+    "dir": "dir"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rxjs-space/gitbasics.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rxjs-space/gitbasics/issues"
+  },
+  "homepage": "https://github.com/rxjs-space/gitbasics#readme",
+  "dependencies": {
+    "lodash": "^4.16.1",
+    "typescript": "^1.8.10"
+  },
+  "devDependencies": {
+    "webpack": "^1.13.2"
+  }
+}
