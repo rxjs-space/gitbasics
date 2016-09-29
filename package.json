@@ -4,11 +4,12 @@
   "description": "some demo of gitbasics\r the 2nd line\r the 3rd line",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "prestart": "tsc index.ts",
-    "poststart": "echo \"This is after the end point.\"",
-    "dir": "dir"
+    "test": "karma start",
+    "start": "webpack-dev-server",
+    "tsc": "tsc",
+    "tscinit": "tsc --init",
+    "dir": "dir",
+    "webpack": "webpack"
   },
   "repository": {
     "type": "git",
@@ -22,10 +23,22 @@
   },
   "homepage": "https://github.com/rxjs-space/gitbasics#readme",
   "dependencies": {
+    "@types/lodash": "^4.14.36",
     "lodash": "^4.16.1",
-    "typescript": "^1.8.10"
+    "rxjs": "^5.0.0-beta.12",
+    "typescript": "^2.0.3"
   },
   "devDependencies": {
-    "webpack": "^1.13.2"
+    "@types/jasmine": "^2.2.34",
+    "awesome-typescript-loader": "^2.2.4",
+    "html-webpack-plugin": "^2.22.0",
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.3.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.0.2",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^1.8.0",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.1"
   }
 }
