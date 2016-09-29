@@ -1,11 +1,12 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
- module.exports = {
-     entry: './index.ts',
-     output: {
-         path: './dist',
-         filename: 'bundle.js'
-     },
-  // Currently we need to add '.ts' to the resolve.extensions array.
+
+module.exports = {
+  entry: './src/index.ts',
+  output: {
+    path: './dist',
+    filename: 'bundle.js'
+  },
+
   resolve: {
     extensions: ['', '.ts', '.js']
   },
@@ -22,8 +23,12 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
       }
     ]
   },
-  plugins: [new HtmlWebpackPlugin({
-      template: './index.html'
-  })],
+
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './src/index.html'
+    })
+  ],
+  
   devServer: { inline: true }
 };

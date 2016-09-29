@@ -6,9 +6,7 @@
   "scripts": {
     "test": "karma start",
     "start": "webpack-dev-server",
-    "tsc": "tsc",
     "tscinit": "tsc --init",
-    "dir": "dir",
     "webpack": "webpack"
   },
   "repository": {
@@ -23,13 +21,13 @@
   },
   "homepage": "https://github.com/rxjs-space/gitbasics#readme",
   "dependencies": {
-    "@types/lodash": "^4.14.36",
-    "lodash": "^4.16.1",
-    "rxjs": "^5.0.0-beta.12",
-    "typescript": "^2.0.3"
+    "rxjs": "^5.0.0-beta.12"
   },
   "devDependencies": {
     "@types/jasmine": "^2.2.34",
+    "@types/lodash": "^4.14.36",
+    "lodash": "^4.16.1",
+    "typescript": "^2.0.3",
     "awesome-typescript-loader": "^2.2.4",
     "html-webpack-plugin": "^2.22.0",
     "jasmine-core": "^2.5.2",
