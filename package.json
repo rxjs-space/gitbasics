@@ -6,8 +6,7 @@
   "scripts": {
     "test": "karma start",
     "start": "webpack-dev-server",
-    "tscinit": "tsc --init",
-    "webpack": "webpack"
+    "prod": "webpack -p"
   },
   "repository": {
     "type": "git",
