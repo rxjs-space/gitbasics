@@ -1,9 +1,7 @@
-import {logMsg, aNumber, shape} from './sample_modules/log-msg'
-logMsg('xyz');
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/observable/of';
+import 'rxjs/add/operator/map';
 
-import * as circle from './sample_modules/circle'
-console.log(`The area of a circle of radius 4 is ${circle.area(4)}`);
-
-import * as _ from 'lodash';
-const result = _.without([1,2,1,1],1)
-console.log(`the result is ${result}`);
+Observable.of(1)
+  .map(val => val*2)
+  .subscribe(console.log);
